@@ -1,0 +1,174 @@
+﻿<Page x:Class="Greenify.Details"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Greenify"
+      mc:Ignorable="d" 
+      d:DesignHeight="410" d:DesignWidth="760"
+      Title="Details">
+
+    <Grid>
+        <FlowDocumentReader UseLayoutRounding="True" SnapsToDevicePixels="True" Margin="26,50,83,63">
+            <FlowDocumentReader.Resources>
+                <Style TargetType="TableCell">
+                    <Setter Property="TextAlignment" Value="Center"/>
+                </Style>
+            </FlowDocumentReader.Resources>
+            <FlowDocument>
+                <Table CellSpacing="0">
+                    <Table.Columns>
+                        <TableColumn/>
+                        <TableColumn/>
+                        <TableColumn/>
+                        <TableColumn/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell BorderBrush="Black" BorderThickness="1">
+                                <Paragraph  FontFamily="Yu Gothic UI Semibold" FontWeight="Bold">Week</Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                                <Paragraph  FontFamily="Yu Gothic UI Semibold" FontWeight="Bold">Electricity Bill</Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                                <Paragraph  FontFamily="Yu Gothic UI Semibold" FontWeight="Bold">Gas Bill</Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                                <Paragraph  FontFamily="Yu Gothic UI Semibold" FontWeight="Bold">Oil Bill</Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                                <Paragraph  FontFamily="Yu Gothic UI Semibold" FontWeight="Bold">Weekly Mileage</Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                                <Paragraph  FontFamily="Yu Gothic UI Semibold" FontWeight="Bold">Number of flights</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell BorderBrush="Black" BorderThickness="1,0,1,1">
+                                <Paragraph  FontFamily="Yu Gothic UI Semibold" FontWeight="Bold">1</Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="elec_bill1" FontFamily="Yu Gothic UI Semibold" ></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="gas_bill1" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="oil_bill1" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="wk_mil1" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="nr_fl1" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell BorderBrush="Black" BorderThickness="1,0,1,1">
+                                <Paragraph  FontFamily="Yu Gothic UI Semibold" FontWeight="Bold">2</Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="elec_bill2" FontFamily="Yu Gothic UI Semibold" ></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="gas_bill2" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="oil_bill2" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="wk_mil2" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="nr_fl2" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell BorderBrush="Black" BorderThickness="1,0,1,1">
+                                <Paragraph  FontFamily="Yu Gothic UI Semibold" FontWeight="Bold">3</Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="elec_bill3" FontFamily="Yu Gothic UI Semibold" ></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="gas_bill3" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="oil_bill3" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="wk_mil3" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="nr_fl3" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell BorderBrush="Black" BorderThickness="1,0,1,1">
+                                <Paragraph  FontFamily="Yu Gothic UI Semibold" FontWeight="Bold">4</Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="elec_bill4" FontFamily="Yu Gothic UI Semibold" ></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="gas_bill4" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="oil_bill4" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="wk_mil4" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="nr_fl4" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell BorderBrush="Black" BorderThickness="1,0,1,1">
+                                <Paragraph  FontFamily="Yu Gothic UI Semibold" FontWeight="Bold">Average</Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="elec_bill5" FontFamily="Yu Gothic UI Semibold" ></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="gas_bill5" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="oil_bill5" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="wk_mil5" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="nr_fl5" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell BorderBrush="Black" BorderThickness="1,0,1,1">
+                                <Paragraph  FontFamily="Yu Gothic UI Semibold" FontWeight="Bold">Average User Data</Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="elec_bill6" FontFamily="Yu Gothic UI Semibold" ></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="gas_bill6" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="oil_bill6" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="wk_mil6" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                            <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                                <Paragraph x:Name="nr_fl6" FontFamily="Yu Gothic UI Semibold"></Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentReader>
+    </Grid>
+
+
+</Page>

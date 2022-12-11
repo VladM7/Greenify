@@ -1,0 +1,57 @@
+﻿<Page x:Class="Greenify.InfoEntry"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Greenify"
+      mc:Ignorable="d" 
+      d:DesignHeight="410" d:DesignWidth="760"
+      Title="InfoEntry" Width="{Binding ActualWidth, ElementName=Window}"
+Height="{Binding ActualHeight, ElementName=Window}">
+
+    <Grid>
+        <TextBlock Text="Input your weekly data!" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="32" />
+     
+        <Button x:Name="SendDataBtn" Content="Submit" HorizontalAlignment="Center" Margin="0,72,0,0" VerticalAlignment="Top" Click="SendDataBtn_Click" Height="35" Width="122" Background="#FF1CE900" FontFamily="Ebrima" FontSize="20"/>
+
+        <ScrollViewer CanContentScroll="True" Margin="0,154,0,0" >
+            <StackPanel Height="200" Width="750" Margin="10,0,0,0">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Electricity bill:" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" />
+                    <TextBox x:Name="DateUserInfo" HorizontalAlignment="Center" Margin="50,0,0,0" TextWrapping="Wrap"  VerticalAlignment="Center" Width="120" TextChanged="TextBox_TextChanged"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Natural gas bill: " HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" />
+                    <TextBox x:Name="DateGaze" HorizontalAlignment="Center" Margin="27,0,0,0" TextWrapping="Wrap"   VerticalAlignment="Center" Width="120"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Petrol bill: " HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" />
+                    <TextBox x:Name="oil" HorizontalAlignment="Center" Margin="77,0,0,0" TextWrapping="Wrap"   VerticalAlignment="Center" Width="120"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Kilometers driven: " HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" />
+                    <TextBox x:Name="milage" HorizontalAlignment="Center" Margin="6,0,0,0" TextWrapping="Wrap"   VerticalAlignment="Center" Width="120"/>
+                </StackPanel> 
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Flights: " HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" />
+                    <TextBox x:Name="avion" Margin="101,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Recycle paper: " HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" />
+                    <ComboBox x:Name="rec_pap" VerticalAlignment="Center"  Margin="36,0,0,0" Width="52" >
+                    <ComboBoxItem>Yes</ComboBoxItem>
+                    <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+                       </ComboBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Recycle metal: " HorizontalAlignment="Left"  VerticalAlignment="Center" FontSize="20" />
+                    <ComboBox  x:Name="rec_metal"   Margin="38,0,0,0" Width="52" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <ComboBoxItem>Yes</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+</Page>
